@@ -1,0 +1,84 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "env": {},
+      "disabled": true,
+      "autoApprove": []
+    },
+    "aws-mcp": {
+      "command": "uvx",
+      "timeout": 100000,
+      "args": [
+        "mcp-proxy-for-aws@latest",
+        "--log-level",
+        "ERROR",
+        "https://aws-mcp.us-east-1.api.aws/mcp"
+      ],
+      "env": {
+        "AWS_PROFILE": "devzilla"
+      },
+      "autoApprove": [
+        "aws___run_script",
+        "aws___call_aws",
+        "aws___suggest_aws_commands"
+      ]
+    }
+  },
+  "powers": {
+    "mcpServers": {
+      "power-stripe-stripe": {
+        "url": "https://mcp.stripe.com",
+        "disabledTools": [],
+        "autoApprove": [
+          "search_stripe_documentation",
+          "list_customers",
+          "fetch_stripe_resources",
+          "list_payment_intents",
+          "search_stripe_resources",
+          "list_subscriptions",
+          "list_invoices",
+          "stripe_api_search",
+          "retrieve_balance"
+        ]
+      },
+      "power-terraform-terraform": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "hashicorp/terraform-mcp-server"
+        ],
+        "env": {},
+        "disabled": false
+      },
+      "power-aws-agentcore-agentcore-mcp-server": {
+        "command": "uvx",
+        "args": [
+          "awslabs.amazon-bedrock-agentcore-mcp-server@latest"
+        ],
+        "disabled": false,
+        "autoApprove": [
+          "manage_agentcore_runtime"
+        ]
+      },
+      "power-strands-strands-agents": {
+        "command": "uvx",
+        "args": [
+          "strands-agents-mcp-server"
+        ],
+        "env": {
+          "FASTMCP_LOG_LEVEL": "INFO"
+        },
+        "autoApprove": [
+          "search_docs",
+          "fetch_doc"
+        ]
+      }
+    }
+  }
+}

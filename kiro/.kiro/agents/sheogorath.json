@@ -1,0 +1,19 @@
+{
+  "name": "sheogorath",
+  "description": "Android Engineer",
+  "prompt": "",
+  "mcpServers": {},
+  "tools": [
+    "*"
+  ],
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [
+    "file:///home/andy/.kiro/steering/android-engineer.md",
+    "file://.kiro/steering/**/*.md" 
+  ],
+  "hooks": {},
+  "toolsSettings": {},
+  "includeMcpJson": true,
+  "model": null
+}

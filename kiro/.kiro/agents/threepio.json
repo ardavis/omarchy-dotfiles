@@ -1,0 +1,19 @@
+{
+  "name": "threepio",
+  "description": "Code reviewer and quality enforcer",
+  "prompt": "",
+  "mcpServers": {},
+  "tools": [
+    "*"
+  ],
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [
+    "file:///home/andy/.kiro/steering/code-reviewer.md",
+    "file://.kiro/steering/**/*.md"
+  ],
+  "hooks": {},
+  "toolsSettings": {},
+  "useLegacyMcpJson": true,
+  "model": null
+}

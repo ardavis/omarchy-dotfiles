@@ -1,0 +1,5 @@
+aws/.aws/config
+bash/.bashrc
+kiro/.kiro/powers
+git/.gitconfig
+ngrok/.config/ngrok/ngrok.yml

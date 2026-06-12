@@ -1,0 +1,22 @@
+{
+  "name": "glados",
+  "description": "",
+  "prompt": "",
+  "mcpServers": {},
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [
+    "file:///home/andy/.kiro/steering/test-engineer.md",
+    "file://.kiro/steering/**/*.md"
+  ],
+  "hooks": {},
+  "toolsSettings": {
+    "shell": {
+      "allowedCommands": ["fizzy *", "git status", "git fetch"],
+      "deniedCommands": ["git commit .*", "git push .*"],
+      "autoAllowReadonly": true
+    } 
+  },
+  "useLegacyMcpJson": true,
+  "model": null
+}

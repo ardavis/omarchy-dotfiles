@@ -1,0 +1,54 @@
+collections:
+  zillacore-knowledge:
+    path: /home/andy/.zillacore/brain/knowledge
+    pattern: "**/*.md"
+    context:
+      "": "Shared technical knowledge: project conventions, coding patterns, architecture decisions, lessons learned"
+  galen-persona:
+    path: /home/andy/.zillacore/brain/persona/galen
+    pattern: "**/*.md"
+    context:
+      "": Communication style and personality for AI agent galen
+  zillacore-memory:
+    path: /home/andy/.zillacore/brain/memory
+    pattern: "**/*.md"
+    context:
+      "": "Per-card session memory: decisions, questions, answers, work status, timelines"
+  glados-persona:
+    path: /home/andy/.zillacore/brain/persona/glados
+    pattern: "**/*.md"
+    context:
+      "": Communication style and personality for AI agent glados
+  galen-memory:
+    path: /home/andy/.zillacore/brain/memory/galen
+    pattern: "**/*.md"
+    context:
+      "": "Per-card session memory for galen: decisions, questions, answers, work status, timelines"
+  glados-memory:
+    path: /home/andy/.zillacore/brain/memory/glados
+    pattern: "**/*.md"
+    context:
+      "": "Per-card session memory for glados: decisions, questions, answers, work status, timelines"
+  threepio-persona:
+    path: /home/andy/.zillacore/brain/persona/threepio
+    pattern: "**/*.md"
+    context:
+      "": Communication style and personality for AI agent threepio
+  threepio-memory:
+    path: /home/andy/.zillacore/brain/memory/threepio
+    pattern: "**/*.md"
+    context:
+      "": "Per-card session memory for threepio: decisions, questions, answers, work status, timelines"
+  sheogorath-persona:
+    path: /home/andy/.zillacore/brain/persona/sheogorath
+    pattern: "**/*.md"
+    context:
+      "": Communication style and personality for AI agent Sheogorath
+  sheogorath-memory:
+    path: /home/andy/.zillacore/brain/memory/sheogorath
+    pattern: "**/*.md"
+    context:
+      "": "Per-card session memory for Sheogorath: decisions, questions, answers, work status, timelines"
+  card-titles:
+    path: /home/andy/.zillacore/card_titles
+    pattern: "*.md"

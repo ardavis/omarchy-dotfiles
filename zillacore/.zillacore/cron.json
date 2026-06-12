@@ -1,0 +1,179 @@
+{
+  "daily-ai-news": {
+    "id": "daily-ai-news",
+    "schedule": "30 16 * * 5",
+    "parsed": {
+      "minute": "30",
+      "hour": "16",
+      "day": "*",
+      "month": "*",
+      "weekday": "5"
+    },
+    "agent": "Galen",
+    "project": "stowzilla",
+    "model": null,
+    "prompt": "Find the top 3 biggest AI news stories from the PAST WEEK. Focus on the most impactful/significant stories, not just the most recent. For each: title, 1-2 sentence summary, source link. Keep it tight. Format: **Top 3 AI News - Week of [Date Range]**",
+    "enabled": true,
+    "discord_channel_id": "1423854397980414012",
+    "created_at": "2026-02-25T17:30:43-05:00",
+    "last_run": "2026-06-05T16:30:49-04:00",
+    "execution_count": 39
+  },
+  "list-all-fizzy-card-titles-that": {
+    "id": "list-all-fizzy-card-titles-that",
+    "schedule": "5 8 * * 1-5",
+    "parsed": {
+      "minute": "5",
+      "hour": "8",
+      "day": "*",
+      "month": "*",
+      "weekday": "1-5"
+    },
+    "agent": "Sheogorath",
+    "project": "zillacore",
+    "model": null,
+    "prompt": "Run the script at ~/.zillacore/scripts/daily-board-report.sh and post the output to Discord.",
+    "enabled": true,
+    "discord_channel_id": "1423854397980414012",
+    "forum_title": null,
+    "forum_reply_to_latest": true,
+    "repeat_count": null,
+    "execution_count": 76,
+    "created_at": "2026-02-27T00:19:15-05:00",
+    "last_run": "2026-06-12T08:05:31-04:00"
+  },
+  "reminder-update-the-github-pat-": {
+    "id": "reminder-update-the-github-pat-",
+    "schedule": "in 89 days",
+    "parsed": {
+      "one_time": true,
+      "timestamp": "2026-06-02 21:53:41 -0400"
+    },
+    "agent": "Galen",
+    "project": "zillacore",
+    "model": null,
+    "prompt": "Reminder: Update the GitHub PAT (Personal Access Token) for DISPATCHER_REPO_READ_TOKEN in production environment secrets. The current token may be expiring soon.",
+    "enabled": false,
+    "discord_channel_id": null,
+    "forum_title": null,
+    "repeat_count": null,
+    "execution_count": 1,
+    "created_at": "2026-03-05T20:53:41-05:00",
+    "last_run": "2026-06-02T21:53:24-04:00"
+  },
+  "post-a-morning-message-to-disco": {
+    "id": "post-a-morning-message-to-disco",
+    "schedule": "0 8 * * 1-5",
+    "parsed": {
+      "minute": "0",
+      "hour": "8",
+      "day": "*",
+      "month": "*",
+      "weekday": "1-5"
+    },
+    "agent": "GLaDOS",
+    "project": "stowzilla",
+    "model": null,
+    "prompt": "Post a morning message to Discord #GLaDOS. Use your GLaDOS personality. Format as bullet points with: a programmer dad joke (run ruby ~/.zillacore/scripts/fetch_joke.rb to get one), the most important task we should work on today, days since last production deploy (run ./scripts/last-deployment.sh prod to get the actual deployment timestamp and calculate days since), and other relevant tidbits. Make it different every day.",
+    "enabled": true,
+    "discord_channel_id": "1423854397980414012",
+    "forum_title": null,
+    "repeat_count": null,
+    "execution_count": 61,
+    "created_at": "2026-03-12T08:27:12-04:00",
+    "last_run": "2026-06-12T08:00:47-04:00"
+  },
+  "search-for-recent-google-develo": {
+    "id": "search-for-recent-google-develo",
+    "schedule": "0 9 * * 1",
+    "parsed": {
+      "minute": "0",
+      "hour": "9",
+      "day": "*",
+      "month": "*",
+      "weekday": "1"
+    },
+    "agent": "Threepio",
+    "project": "stowzilla",
+    "model": null,
+    "prompt": "Search for recent Google developer announcements about Gemini Extensions, Gemini for Home, or any new third-party integration APIs for Google Home/Nest devices. Check Google's developer blogs, Android Developers Blog, and Google I/O announcements. Only report if there is actionable news — a new API, SDK, developer preview, or official announcement that would enable building a custom Google Home integration for Stowzilla. If there is nothing new or only rumors/speculation, do NOT post to Discord. If there IS actionable news, summarize what was announced, what it means for our Alexa-first strategy, and what next steps we should take.",
+    "script": null,
+    "enabled": true,
+    "discord_channel_id": null,
+    "forum_title": null,
+    "forum_reply_to_latest": false,
+    "repeat_count": null,
+    "execution_count": 8,
+    "created_at": "2026-04-20T08:43:08-04:00",
+    "last_run": "2026-06-08T09:01:10-04:00"
+  },
+  "perform-a-full-onboarding-audit": {
+    "id": "perform-a-full-onboarding-audit",
+    "schedule": "0 10 * * 3",
+    "parsed": {
+      "minute": "0",
+      "hour": "10",
+      "day": "*",
+      "month": "*",
+      "weekday": "3"
+    },
+    "agent": "GLaDOS",
+    "project": "stowzilla",
+    "model": null,
+    "prompt": "Perform a full onboarding audit of dev02.stowzilla.com using Playwright. Visit the site as a brand new user: land on the homepage, check ZIP code eligibility (use 33611), go through bag selection, attempt signup, and test the login flow. Take screenshots at each step. Report: what's working well, what's broken (API errors, missing data, UI issues), and any regressions from previous audits. Try to actually complete signup if possible — use Stripe test card 4242424242424242 if needed. If signup is broken, document exactly how it fails. Post findings with clear severity levels (🔴 blocker, 🟡 issue, 🟢 minor).",
+    "script": null,
+    "enabled": true,
+    "discord_channel_id": "1423854179880927274",
+    "forum_title": null,
+    "forum_reply_to_latest": false,
+    "repeat_count": null,
+    "execution_count": 7,
+    "created_at": "2026-04-21T00:33:28-04:00",
+    "last_run": "2026-06-10T10:05:44-04:00"
+  },
+  "night-shift-consolidated": {
+    "id": "night-shift-consolidated",
+    "schedule": "0 3 * * *",
+    "parsed": {
+      "minute": "0",
+      "hour": "3",
+      "day": "*",
+      "month": "*",
+      "weekday": "*"
+    },
+    "agent": "GLaDOS",
+    "project": "stowzilla",
+    "model": null,
+    "prompt": null,
+    "script": "/home/andy/.zillacore/scripts/night-shift-consolidated.sh",
+    "enabled": true,
+    "discord_channel_id": "1423854179880927274",
+    "forum_title": null,
+    "forum_reply_to_latest": false,
+    "repeat_count": null,
+    "execution_count": 43,
+    "created_at": "2026-04-28T10:30:24-04:00",
+    "last_run": "2026-06-12T03:00:01-04:00"
+  },
+  "security-incident-response-plan": {
+    "id": "security-incident-response-plan",
+    "schedule": "0 9 9 6,12 *",
+    "parsed": {
+      "one_time": true,
+      "timestamp": "2026-06-12 00:00:00 -0400"
+    },
+    "agent": "Threepio",
+    "project": "stowzilla",
+    "model": null,
+    "prompt": "Security Incident Response Plan (IRP) semi-annual review. Review docs/security/incident-response-plan.md, verify contact information is current, validate procedures against any infrastructure changes, and post findings to card #944.",
+    "script": null,
+    "enabled": false,
+    "discord_channel_id": null,
+    "forum_title": null,
+    "forum_reply_to_latest": false,
+    "repeat_count": null,
+    "execution_count": 1,
+    "created_at": "2026-06-09T13:25:27-04:00",
+    "last_run": "2026-06-12T00:01:07-04:00"
+  }
+}

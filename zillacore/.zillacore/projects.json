@@ -1,0 +1,112 @@
+{
+  "zillacore": {
+    "repo_path": "/home/andy/Code/zillacore",
+    "fizzy_tags": [
+      "zillacore"
+    ],
+    "github_repo": "stowzilla/zillacore",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "stowzilla": {
+    "repo_path": "/home/andy/Code/marketplace",
+    "fizzy_tags": [
+      "stowzilla"
+    ],
+    "github_repo": "stowzilla/stowzilla",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "default": true,
+    "cli_provider": "kiro"
+  },
+  "terraform-provider-dispatcher": {
+    "repo_path": "/home/andy/Code/terraform-provider-dispatcher",
+    "fizzy_tags": [
+      "dispatcher"
+    ],
+    "github_repo": "stowzilla/terraform-provider-dispatcher",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "lambda-loadout-ruby": {
+    "repo_path": "/home/andy/Code/lambda-loadout-ruby",
+    "fizzy_tags": [
+      "loadout"
+    ],
+    "github_repo": "sogstore/lambda-loadout-ruby",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "posh-nosh": {
+    "repo_path": "/home/andy/Code/posh_nosh",
+    "fizzy_tags": [
+      "posh-nosh"
+    ],
+    "github_repo": "ardavis/posh_nosh",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "droidzilla": {
+    "repo_path": "/home/andy/Code/droidzilla",
+    "fizzy_tags": [
+      "droidzilla"
+    ],
+    "github_repo": "stowzilla/droidzilla",
+    "agent_name": "Sheogorath",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "awesome-design-md": {
+    "repo_path": "/home/andy/Code/awesome-design-md",
+    "fizzy_tags": [
+      "awesome-design-md"
+    ],
+    "github_repo": "stowzilla/awesome-design-md",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "opszilla-android": {
+    "repo_path": "/home/andy/Code/opszilla-android",
+    "fizzy_tags": [
+      "opszilla-android"
+    ],
+    "github_repo": "stowzilla/opszilla-android",
+    "agent_name": "Sheogorath",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "activeitem": {
+    "repo_path": "/home/andy/Code/activeitem",
+    "fizzy_tags": [
+      "activeitem"
+    ],
+    "github_repo": "stowzilla/activeitem",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "belt": {
+    "repo_path": "/home/andy/Code/belt",
+    "fizzy_tags": [
+      "belt"
+    ],
+    "github_repo": "stowzilla/belt",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  },
+  "s3arch": {
+    "repo_path": "/home/andy/Code/s3arch",
+    "fizzy_tags": [
+      "s3arch"
+    ],
+    "github_repo": "stowzilla/s3arch",
+    "agent_name": "Galen",
+    "agent_model": "auto",
+    "cli_provider": "kiro"
+  }
+}

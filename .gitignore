@@ -3,3 +3,9 @@ bash/.bashrc
 kiro/.kiro/powers
 git/.gitconfig
 ngrok/.config/ngrok/ngrok.yml
+zillacore/.zillacore/agents.json
+zillacore/.zillacore/discord.json
+zillacore/.zillacore/fizzy.json
+zillacore/.zillacore/github.json
+zillacore/.zillacore/stowzilla.json
+zillacore/.zillacore/zoho.json

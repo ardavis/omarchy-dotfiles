@@ -1,0 +1,35 @@
+{
+  "environments": {
+    "dev02": {
+      "label": "Dev 02",
+      "url": "https://dev02.stowzilla.com",
+      "urls": {
+        "ops-web-app": "https://ops.dev02.stowzilla.com"
+      },
+      "project": "stowzilla",
+      "owner": "Galen",
+      "aws_profile": "devzilla"
+    },
+    "dev04": {
+      "label": "Dev 04",
+      "url": "https://dev04.stowzilla.com",
+      "urls": {
+        "ops-web-app": "https://ops.dev04.stowzilla.com"
+      },
+      "project": "stowzilla",
+      "owner": "Galen",
+      "aws_profile": "devzilla"
+    },
+    "dev06": {
+      "label": "Dev 06",
+      "url": "https://dev06.stowzilla.com",
+      "urls": {
+        "ops-web-app": "https://ops.dev06.stowzilla.com"
+      },
+      "project": "stowzilla",
+      "owner": "Galen",
+      "aws_profile": "devzilla"
+    }
+  },
+  "schema_version": "1.0"
+}

@@ -208,6 +208,25 @@ tfdeploy() {
   ./scripts/deploy.sh "$env"
 }
 
+update-dotfiles() {
+    cd ~/dotfiles || return 1
+
+    echo "🔄 Pulling latest changes..."
+    git pull --ff-only
+
+    echo "🔄 Injecting all .tpl files..."
+    find . -name "*.tpl" -type f | while read -r f; do
+        out="${f%.tpl}"
+        echo "   🔧 $f → $out"
+        op inject -i "$f" -o "$out" --force
+    done
+
+    echo "🔄 Restowing all packages..."
+    stow --restow -v */
+
+    echo "✅ Done!"
+}
+
 
 # >>> grok installer >>>
 export PATH="$HOME/.grok/bin:$PATH"
